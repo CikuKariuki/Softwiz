@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div
+    style="background-image:url(https://images.pexels.com/photos/1418347/pexels-photo-1418347.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1200); background-size: cover; background-position: static; background-attachment: fixed;scroll-margin-top: 10px;  ">
+    <div class="welcome" style="height: 450px;margin:0 auto;"></div>
+</div>
+<div class="container">
+    <h2 style="text-align:center; margin-top:20px;">Who are we?</h2>
+    <p>We are a provider of enterprise applications and services, helping our customers improve operations, drive growth
+        and quickly adapt to changes in business demands. We offer industry-specific applications, engineered for speed,
+        using ground-breaking technology that delivers a rich user experience, and flexible deployment options that give
+        customers a choice to run their businesses in either on the cloud or on-premises or both.</p>
+    <p>Our effective expertise coupled with our affordable ICT solutions has seen softwiz Kenya develop and implement
+        customized solutions to a variety of business partners in different sectors of economy.</p>
+    <p>Our belief in business automation in this rapid technologically changing world is the foundation of our Mission
+        of purging business communication barriers through proper deployment of accomplished seamless, integrated,
+        enterprise-wide and scalable solutions that provide comprehensive business lifecycle management.</p>
+    <p><span style="font-weight:600;">Our mission is simple:</span> Make technology an asset for your business not a problem.</p>
+
+    <h3>We want to make your work simple and enjoyable, enhance your productivity and put you ahead of competition.</h3>
+
+
+</div>
+<div style="padding-top:70px; background-color:#37474f;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="{% url 'home' %}">
+                    <h4 style="color:white;"> softwiz Kenya</h4>
+                </a>
+                <p style="color:white;">&copy;2019, softwiz Kenya.</p>
+                <div style="margin-top:-10px;">
+                    <a href="https://www.linkedin.com/company/softwiz-kenya/about/" target="_blank"
+                        style="color:white;"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/softwizKE/" target="_blank" style="color:white;"><i
+                            class="fab fa-facebook-square"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <ul style="list-style-type: none;">
+                    <li><a style="color: white; float:right;" href="{% url 'aboutus' %}">About Us</a></li></br>
+                    <li><a style="color: white; float:right;" href="{% url 'products' %}">Products</a></li></br>
+                    <li><a style="color: white; float:right;" href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

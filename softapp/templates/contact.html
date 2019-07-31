@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<div style="background-image:url(https://images.pexels.com/photos/207456/pexels-photo-207456.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000); background-position: static; background-attachment:fixed; background-repeat: no-repeat;background-size: cover;">
+<div class="welcome" style="height: 450px;margin:0 auto;"></div>
+</div>
+<h3 style="text-align:center; padding: 30px;">We would love to hear from you.</h3>
+<div class="container" style="margin-bottom:50px; margin-left:100px;">
+<h5>Physical address: Lenana Road, Northstar Building, First floor, Nairobi</h5>
+<h5>Postal address: 1516-00200, Nairobi</h5>
+<h5>Telephone: (+254) 20 202 6240</h5>
+<h5>Email: info@softwizkenya.com</h5>
+</div>
+
+<div style="padding-top:70px; background-color:#37474f;">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-6">
+                <a href="{% url 'home' %}"><h4 style="color:white;"> softwiz Kenya</h4></a>
+                <p style="color:white;">&copy;2019, softwiz Kenya.</p>
+                <div style="margin-top:-10px;">
+                    <a href="https://www.linkedin.com/company/softwiz-kenya/about/" target="_blank" style="color:white;"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/softwizKE/" target="_blank" style="color:white;"><i class="fab fa-facebook-square"></i></a>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <ul style="list-style-type: none;">
+                    <li><a style="color: white; float:right;"href="{% url 'aboutus' %}">About Us</a></li></br>
+                    <li><a style="color: white; float:right;"href="{% url 'products' %}">Products</a></li></br>
+                    <li><a style="color: white; float:right;"href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+{% endblock %}
